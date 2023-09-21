@@ -1,0 +1,68 @@
+
+.main_image {
+    position: absolute;
+    width: 650px; 
+    height: auto;
+    margin-top: -230px;
+    margin-left: 1180px;
+    opacity: 0.9; 
+    z-index: -1;
+}
+
+.service_image{
+    position: absolute;
+    bottom:350px;
+    right: 1300px;
+    opacity: 0.9; 
+    z-index: -1;
+}
+
+
+.contact_image{
+    position: absolute;
+    width: 500px; 
+    height: auto;
+    margin-top: -230px;
+    margin-left: 1330px;
+    opacity: 0.9; 
+    z-index: -1;
+}
+
+
+.howtouse_image{
+    position: absolute;
+    width: 400px; 
+    height: auto;
+    margin-top: -270px;
+    margin-left: 450px;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.service_image{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 1250px;
+    opacity: 0.9; 
+    z-index: -1;
+}
+
+
+.login_image{
+    position: absolute;
+    margin-top: 400px;
+    margin-right: 1250px;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+.signin_image{
+    position: absolute;
+    width: 600px; 
+    height: auto;
+    margin-top: 230px;
+    margin-right: 1100px;
+    opacity: 0.9;
+    z-index: -1;
+}

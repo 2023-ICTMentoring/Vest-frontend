@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Compatible" content="no-cache"/>
+    <link rel="stylesheet" href="css/css.css">
+    <!-- <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="image.css"> -->
+    <title>* Hello! 쪼끼쪼끼 *</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:#F6E7C7;
+            background-image: url('group-7.png');
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: 140% 50%;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: ''; /* 가상 요소의 내용 없음 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15); /* 흐리게 만드는 효과 */
+            z-index: -1; /* 가상 요소를 배경 이미지 뒤로 숨김 */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <img src="safety_vest_emoji_971x1024_ntq7br97_1.png" alt="vest image" width="50">
+            <a href="main.html">쪼끼쪼끼</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="service.html">서비스 소개</a></li> 
+            <li><a href="contact.html">문의하기</a></li> 
+            <li><a href="howtouse.html">이용방법</a></li> 
+            <li><a href="project.html">프로젝트</a></li> 
+        </ul>
+
+        <ul class="navbar_users">
+            <li><a href="login.html">로그인</a></li> 
+            <li><a href="signin.html">회원가입</a></li> 
+        </ul>
+    </nav>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>프로젝트</strong>
+            <p>다운로드 받아서 사용하세요.</p>
+        <div>
+        <div class="board_list_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input type="text" id="titleInput" placeholder="  제목 입력"></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd><input type="text" id="authorInput" placeholder="  글쓴이 입력"></dd>
+                    </dl>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <!-- action 따옴표 안에 서버 URL 넣기 -->
+                        <input type="file"  id="fileInput" name="program">
+                        <input type="submit">
+                    </form>
+                </div>
+                <div class="cont">
+                    <textarea id="contentInput" placeholder="내용입력"></textarea>
+                </div>
+            </div>
+            <div class="board_list">
+            </div>
+            <div class="bt_wrap">
+                <a href="project.html" class="on">등록</a>
+                <a href="project.html">취소</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 등록 버튼 클릭 시 이벤트 핸들러
+            document.getElementById("uploadButton").addEventListener("click", function() {
+                // 사용자 입력 가져오기
+                const title = document.getElementById("titleInput").value;
+                const author = document.getElementById("authorInput").value;
+                const fileInput = document.getElementById("fileInput");
+                const content = document.getElementById("contentTextarea").value;
+
+                // 서버에 데이터 업로드 및 파일 전송 (서버 측에서 구현해야 함)
+                const formData = new FormData();
+                formData.append("title", title);
+                formData.append("author", author);
+                formData.append("content", content);
+                formData.append("program", fileInput.files[0]); // 파일 업로드 처리
+
+                // 실제로는 서버에 데이터를 업로드하는 코드를 추가
+                // 서버에 요청을 보내는 코드 추가
+
+                // 업로드가 성공하면 사용자에게 메시지 표시 또는 다른 작업 수행
+                alert("글이 업로드되었습니다.");
+            });
+
+            // 취소 버튼 클릭 시 이벤트 핸들러
+            document.getElementById("cancelButton").addEventListener("click", function() {
+                // 확인 대화 상자 표시
+                const isConfirmed = confirm("글 등록을 취소하시겠습니까?");
+                if (isConfirmed) {
+                    // 확인 버튼을 눌렀을 때 프로젝트 사이트로 이동
+                    window.location.href = "project.html";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+

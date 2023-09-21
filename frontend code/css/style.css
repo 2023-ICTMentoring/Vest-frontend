@@ -1,0 +1,698 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR';
+}
+
+a {
+    text-decoration: none;
+    color : black;
+}
+
+html{
+    font-size: 10px;
+}
+
+/* main navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #F6E7C7; */
+    padding : 40px 50px;
+    border-bottom: 1px solid black;
+}
+
+.navbar_logo {
+    display: flex;
+    list-style: none;
+    font-size: 35px;
+    font-style: bold;
+    font-weight: 600;
+}
+
+.navbar_logo li {
+    padding: 8px 15px;
+}
+
+.navbar_logo img {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 21px;
+}
+
+.navbar_menu li {
+    padding: 8px 40px;
+}
+
+.navbar_menu li:hover {
+    background-color: rgba(245, 222, 179, 0.7);
+    border-radius: 10px;
+}
+
+.navbar_users {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 17px;
+}
+
+.navbar_users li {
+    padding : 8px 20px;
+}
+
+.navbar_users li:hover {
+    background-color: rgba(245, 222, 179, 0.7);
+    border-radius: 4px;
+}
+
+
+/* main.html */
+
+.word {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.word .exercise {
+    margin-top:80px;
+    margin-left: 150px;
+    font-size: 140px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.word .with {
+    margin-top:20px;
+    margin-left: 400px;
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.word .jjokki {
+    margin-top: -100px;
+    margin-left: 600px;
+    font-size: 90px;
+    font-weight: 800;
+}
+
+.word .main_explain_1 {
+    margin-top: 60px;
+    margin-left: 300px;
+    font-size: 25px;
+    color:#333;
+}
+
+.word .main_explain_2 {
+    margin-top: 20px;
+    margin-left: 400px;
+    font-size: 15px;
+    color:#777;
+}
+
+
+/* service.html */
+
+.word .service {
+    margin-top: 95px;
+    margin-left: 300px;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.word .start {
+    margin-top: 30px;
+    margin-left: 770px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.word .service_explain_1 {
+    margin-top: 25px;
+    margin-left: 770px;
+    font-size: 17px;
+}
+
+
+.word .goal {
+    margin-top: 25px;
+    margin-left: 500px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.word .service_explain_2 {
+    margin-top: 25px;
+    margin-left: 500px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.word .character {
+    margin-top: 45px;
+    margin-left: 700px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.word .service_explain_3 {
+    margin-top: 25px;
+    margin-left: 700px;
+    font-size: 17px;
+}
+
+/* contact.html */
+
+.contact {
+    margin-top: 95px;
+    margin-left: 300px;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+
+.contact_1 {
+    margin-top: 25px;
+    margin-left: 500px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.contact_email_1 {
+    margin-top: 25px;
+    margin-left: 500px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.contact_email_2 {
+    margin-top: 25px;
+    margin-left: 500px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.contact_email_3 {
+    margin-top: 25px;
+    margin-left: 500px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.contact_waiting {
+    margin-top: 25px;
+    margin-left: 500px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+/* howtouse.html */
+
+.howtouse {
+    margin-top: 95px;
+    margin-left: 300px;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+
+
+/* project.html */
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.board_wrap {
+    width: 1050px;
+    margin: 65px auto;
+}
+
+.board_title {
+    margin-bottom: 10px;
+}
+
+.board_title strong {
+    font-size: 3rem;
+}
+
+.board_title p {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.bt_wrap {
+    margin-top :30px;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 0px;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+.bt_wrap a:second-child {
+    border: 1px solid #fff;
+}
+
+.bt_wrap a:first-child {
+    margin-left: 0;
+}
+
+.bt_wrap a.on {
+    background : #000;
+    color: #fff;
+}
+
+
+.board_list {
+    width: 100%;
+    border-top: 2px solid #000;
+    margin-bottom: 70px;
+}
+
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list > div.top {
+    border-bottom:  solid #999;
+}
+
+.board_list > div:last-child {
+    border-bottom:  solid #000;
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 60%;
+    text-align: left;
+}
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .count {
+    width: 10%;
+}
+
+.board_page{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+}
+
+.board_page a.bt {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.num{
+    padding-top: 9px;
+    font-size: 1.4rem;
+}
+
+.board_page a.num.on {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+.board_page a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+
+/* login.html */
+
+
+.wrapper {
+    justify-content: center; 
+    align-items: center;  
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; 
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(20px);
+    box-sizing: border-box; 
+    box-shadow:  0 0 10px rgba(0,0,0,0.2);
+    color: #000;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 15px 30px 50px;
+}
+
+.large-text {
+    font-size: 7rem; /* 적절한 크기로 조정 */
+    font-weight: bold; /* 글씨를 두껍게 만들 수도 있습니다. */
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 60px;
+    margin: 30px ;
+}
+
+.input-box input {
+    width: 90%;
+    height: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,0.8);
+    border-radius: 40px;
+    color: #000;
+    /* padding: 20px 45px 20px 20px; */
+}
+
+.input-box::placeholder {
+    color: #fff;}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 40px 15px 40px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .button {
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center;
+    width: 60%;
+    height: 45px;
+    background: #E79938;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px 0 15px;
+}
+
+.register-link p a {
+    color:#333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* signin.html*/
+
+
+
+
+/* view.html */
+
+.board_view {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+.board_view .title{
+    padding: 20px 15px;
+    border-bottom: 1px dashed #777;
+    font-size: 2rem;
+}
+
+.board_view .info{
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    font-size: 0;
+}
+
+.board_view .info dl,
+.board_view .info form,
+.board_view .file-download{
+    display: inline-block;
+    padding: 0 30px;
+    align-items: center; 
+    vertical-align: top; 
+    margin-right: 20px; 
+    margin-bottom: 50px;
+}
+
+
+.file-name {
+    font-size: 1.4rem;
+    /* margin-bottom: 20px; */
+    margin-right: 30px;
+}
+
+.file-name:hover {
+    text-decoration: underline;
+}
+
+
+/* 
+.info dl {
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 20px; 
+} */
+
+
+.board_view .info dl:first-child{
+    padding-left: 0;
+}
+
+/* .board_view .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 13px;
+    background: red;
+} */
+
+.board_view .info dl:first-child::before {
+    display: none;
+}
+    
+
+.board_view .info dl dt,
+.board_view .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+
+.board_view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board_view .cont {
+    padding: 15px;
+    /* border-top: 1px solid #000; */
+    line-height: 160%;
+    font-size: 1.4rem;
+}
+
+
+/* write.html */
+
+.board_write {
+    border-top: 2px solid #000;
+}
+
+
+/* 삭제해도 되는 부분 info */
+.board_write .title,
+.board_write .info {
+    padding: 15px;
+}
+
+.board_write .title dt,
+.board_write .title dd,
+.board_write .info dt,
+.board_write .info dd,
+.board_write .info form {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+
+.board_write .title dt,
+.board_write .info dt{
+    width: 100px;
+}
+
+
+form input[type="submit"] {
+    margin-left: 50px;
+    padding: 0 40px; 
+    box-sizing: border-box; 
+}
+
+.board_write .title dd {
+    width: calc(100% - 100px);
+}
+
+.board_write .title input[type="text"],
+.board_write .info input[type="text"],
+.board_write .info input[type="password"],
+.board_write .info form[method="post"]{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.board_write .title input[type="text"] {
+    width: 80%;
+}
+
+.board_write .info {
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px solid #000;
+    font-size: 0;
+}
+
+.board_write .title dl {
+    font-size: 0;
+}
+
+.board_write .info dl {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.board_write .cont {
+    border-bottom: 1px solid #000;
+}
+
+.board_write .cont textarea {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+}
+
+
+/* write.html*/
+
+/* .board_write .info form {
+    display: flex; 
+    align-items: center
+    width: 40%;
+    margin: 30px auto;
+}
+
+.board_write .info form input {
+    flex: 1; 
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+} */

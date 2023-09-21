@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Compatible" content="no-cache"/>
+    <link rel="stylesheet" href="css/css.css">
+    <!-- <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="image.css"> -->
+    <title>* Hello! 쪼끼쪼끼 project*</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:#F6E7C7;
+            background-image: url('group-7.png');
+            background-repeat: no-repeat;
+            background-size: 60%;
+            background-position: 140% 50%;
+            background-attachment: fixed;
+        }
+
+        body::before {
+            content: ''; /* 가상 요소의 내용 없음 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15); /* 흐리게 만드는 효과 */
+            z-index: -1; /* 가상 요소를 배경 이미지 뒤로 숨김 */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <img src="safety_vest_emoji_971x1024_ntq7br97_1.png" alt="vest image" width="50">
+            <a href="main.html">쪼끼쪼끼</a>
+        </div>
+
+        <ul class="navbar_menu">
+            <li><a href="service.html">서비스 소개</a></li> 
+            <li><a href="contact.html">문의하기</a></li> 
+            <li><a href="howtouse.html">이용방법</a></li> 
+            <li><a href="project.html">프로젝트</a></li> 
+        </ul>
+
+        <ul class="navbar_users">
+            <li><a href="login.html">로그인</a></li> 
+            <li><a href="signin.html">회원가입</a></li> 
+        </ul>
+
+        <!-- <a href="#" class="navbar_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a> -->
+    </nav>
+
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>프로젝트</strong>
+            <p>다운로드 받아서 사용하세요.</p>
+        <div>
+        <div class="board_list_wrap">
+            <div class="board_list">
+                <div class="top">
+                    <div class="num">번호</div>
+                    <div class="title">제목</div>
+                    <div class="writer">글쓴이</div>
+                    <div class="date">작성일</div>
+                    <div class="count">조회</div>
+                </div>
+                <div>
+                    <div class="num">5</div>
+                    <div class="title"><a href="#">글 제목</a></div>
+                    <div class="writer">김이름</div>
+                    <div class="date">2023.09.01</div>
+                    <div class="count">100</div>
+                </div>
+                <div>
+                    <div class="num">4</div>
+                    <div class="title"><a href="#">글 제목</a></div>
+                    <div class="writer">김이름</div>
+                    <div class="date">2023.09.01</div>
+                    <div class="count">100</div>
+                </div> 
+                <div>
+                    <div class="num">3</div>
+                    <div class="title"><a href="#">글 제목</a></div>
+                    <div class="writer">김이름</div>
+                    <div class="date">2023.09.01</div>
+                    <div class="count">100</div>
+                </div> 
+                <div>
+                    <div class="num">2</div>
+                    <div class="title"><a href="#">글 제목</a></div>
+                    <div class="writer">김이름</div>
+                    <div class="date">2023.09.01</div>
+                    <div class="count">100</div>
+                </div> 
+                <div>
+                    <div class="num">1</div>
+                    <div class="title"><a href="#">글 제목</a></div>
+                    <div class="writer">김이름</div>
+                    <div class="date">2023.09.01</div>
+                    <div class="count">100</div>
+                </div>       
+            </div>
+            <div class="board_page">
+                <a href="#" class="bt first"><<</a>
+                <a href="#" class="bt prev"><</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="num">4</a>
+                <a href="#" class="num">5</a>
+                <a href="#" class="bt next">></a>
+                <a href="#" class="bt last">>></a>
+            </div>
+            <div class="bt_wrap">
+                <a href="write.html" class="on">글 쓰기</a>
+                <!-- <a href="#">수정</a> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 서버에서 글 목록을 가져오는 함수 (가상 데이터 사용)
+        function fetchBoardData() {
+            return new Promise((resolve, reject) => {
+                // 서버 API 호출 (실제로는 서버로부터 데이터를 가져와야 함)
+                const serverData = [
+                    // { num: 1, title: "글 제목1", writer: "김이름1", date: "2023.09.01", views: 100 },
+                    // { num: 2, title: "글 제목2", writer: "김이름2", date: "2023.09.02", views: 120 },
+                    // 실제 데이터는 서버에서 가져와야 함
+                ];
+    
+                // 데이터를 가져오는데 시간이 걸린다고 가정 (setTimeout 사용)
+                setTimeout(() => {
+                    if (serverData) {
+                        resolve(serverData);
+                    } else {
+                        reject("데이터를 가져오는데 실패했습니다.");
+                    }
+                }, 1000); // 1초 후에 데이터를 반환 (실제로는 서버 응답을 기다려야 함)
+            });
+        }
+    
+        // 글 목록을 화면에 출력하는 함수
+        function renderBoard() {
+            // fetchBoardData() 함수로 데이터를 가져와서 화면에 출력
+            fetchBoardData().then(boardData => {
+                const boardList = document.querySelector(".board_list");
+    
+                // 글 목록을 동적으로 생성하고 추가
+                boardData.forEach(data => {
+                    const boardItem = document.createElement("div");
+                    boardItem.classList.add("board_item");
+    
+                    boardItem.innerHTML = `
+                        <div class="num">${data.num}</div>
+                        <div class="title"><a href="#">${data.title}</a></div>
+                        <div class="writer">${data.writer}</div>
+                        <div class="date">${data.date}</div>
+                        <div class="count">${data.views}</div>
+                    `;
+    
+                    boardList.appendChild(boardItem);
+                });
+            }).catch(error => {
+                console.error('데이터를 가져오는 중 오류 발생: ' + error);
+            });
+        }
+    
+        // 페이지 로드 시 글 목록을 불러와서 출력
+        window.onload = renderBoard;
+    </script>
+</body>
+</html>
